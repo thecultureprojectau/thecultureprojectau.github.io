@@ -1,0 +1,7 @@
+.bannerContainer {
+  background-image: url(../images/CP-136.3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 80vh;
+}
