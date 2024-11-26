@@ -151,6 +151,22 @@ import cpLogo from "../images/Transparent Background_CP_Logo_2024-02.png";
 import * as styles from "./index.module.css";
 import { BannerLinkButton } from "../components/page-index/BannerLinkButton";
 
+const H1Red: React.FC<{ children: React.ReactNode }> = (props) => {
+  return <h1 className={styles.h1Red}>{props.children}</h1>;
+};
+
+const H1Orange: React.FC<{ children: React.ReactNode }> = (props) => {
+  return <h1 className={styles.h1Orange}>{props.children}</h1>;
+};
+
+const GrayText: React.FC<{ children: React.ReactNode }> = (props) => {
+  return <span className={styles.grayText}>{props.children}</span>;
+};
+
+const Divider: React.FC = () => {
+  return <div className={styles.divider}></div>;
+};
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
@@ -183,53 +199,71 @@ const IndexPage: React.FC<PageProps> = () => {
           </center>
         </div>
       </div>
-      {/* <h1 style={headingStyles}>
-        Congratulations
+
+      <div className={styles.row}>
+        <div className={styles.choicesImageContainer}>
+          <div className={styles.choicesImage} />
+        </div>
+        <div className={styles.col}>
+          <H1Red>We have more choices and options than ever before</H1Red>
+          <GrayText>
+            We hear so many opinions: What does it mean to be happy? What is
+            living your best life? What is a good relationship? What is real
+            love? What makes friendships work? Are all goals good or only some?
+            How can I work towards things that do me good and not harm?
+          </GrayText>
+        </div>
+      </div>
+
+      <div className={styles.rowNonFlex}>
+        <div>
+          <H1Orange>Quiz Time!</H1Orange>
+          <GrayText>Take the quiz to see what others think</GrayText>
+        </div>
         <br />
-        <span style={headingAccentStyles}>
-          — you just made a Gatsby site! 🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this
-        page update in real-time. 😎
-      </p>
-      <ul style={doclistStyles}>
-        {docLinks.map((doc) => (
-          <li key={doc.url} style={docLinkStyle}>
-            <a
-              style={linkStyle}
-              href={`${doc.url}?utm_source=starter&utm_medium=ts-docs&utm_campaign=minimal-starter-ts`}
-            >
-              {doc.text}
-            </a>
-          </li>
-        ))}
-      </ul>
-      <ul style={listStyles}>
-        {links.map((link) => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter-ts`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      /> */}
+        <div className={styles.quizComponent}>
+          <div>"Quiz component goes here"</div>
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <div>
+          <GrayText>
+            There has never been more talk about choices, life goals,
+            relationships, mental health, being connected, sex, social life and
+            living your best life. But at the same time, it feels like these
+            things are getting harder to figure out.{" "}
+          </GrayText>
+        </div>
+      </div>
+
+      <div className={styles.rowNonFlex}>
+        <div>
+          <H1Orange>Stats</H1Orange>
+        </div>
+        <div className={styles.statsSection}>
+          <div>*Pie chart here</div>
+          <div className={styles.statsGrayText}>
+            Reported experiencing unwanted sexual behaviour
+          </div>
+        </div>
+        <Divider />
+        <div className={styles.statsSection}>
+          <div>*Pie chart here</div>
+          <div className={styles.statsGrayText}>
+            The number of Australian marriages ending in divorce
+          </div>
+        </div>
+        <Divider />
+        <div className={styles.statsSection}>
+          <div>*Pie chart here</div>
+          <div className={styles.statsGrayText}>
+            Number of people experiencing social isolation.
+          </div>
+        </div>
+        <Divider />
+      </div>
     </main>
   );
 };

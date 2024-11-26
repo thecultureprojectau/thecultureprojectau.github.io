@@ -18,3 +18,89 @@
   font-size: 4em;
   letter-spacing: 0.5em;
 }
+
+.row {
+  display: flex;
+  margin: 20px;
+}
+
+.rowNonFlex {
+  margin: 20px;
+}
+
+.col {
+  flex: 1;
+}
+
+.choicesImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.choicesImage {
+  background-image: url(../images/aidan-meyer-129877-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 300px;
+  height: 300px;
+  border-radius: 9999px;
+  border: 5px solid white;
+  box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.4);
+}
+
+.quizComponent {
+  margin: 10px 0;
+
+  border: 2px solid #ca4037;
+  border-radius: 20px;
+}
+
+.statsSection {
+  margin: 20px 0;
+  display: flex;
+}
+
+.statsSection > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.statsGrayText {
+  color: #3f3f40;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.divider {
+  height: 1px;
+  background-color: #818786;
+}
+
+.h1Red {
+  font-family: Rubik Dirt;
+  font-weight: 600;
+  color: #ca4037;
+  text-transform: uppercase;
+
+  letter-spacing: 0.5em;
+}
+
+.h1Orange {
+  font-family: Rubik Dirt;
+  font-weight: 600;
+  color: #d6a542;
+  text-transform: uppercase;
+
+  letter-spacing: 0.5em;
+}
+
+.grayText {
+  color: #4a4845;
+}
