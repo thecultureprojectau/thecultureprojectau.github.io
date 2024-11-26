@@ -7,9 +7,6 @@ const pageStyles = {
   fontWeight: 400,
 };
 
-const bannerCpLogo = {};
-const cpLogoStyle = {};
-
 const rubikDirtFont = {
   fontFamily: "Rubik Dirt",
   fontWeight: 600,
@@ -38,6 +35,10 @@ const Divider: React.FC = () => {
   return <div className={styles.divider}></div>;
 };
 
+const WhiteText: React.FC<{ children: React.ReactNode }> = (props) => {
+  return <p className={styles.whiteText}>{props.children}</p>;
+};
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
@@ -50,14 +51,9 @@ const IndexPage: React.FC<PageProps> = () => {
           <BannerLinkButton linkPath="some" label="LEADERS IMMERSION PROGRAM" />
           <BannerLinkButton linkPath="some" label="PARTNERS" />
         </div>
-        <div style={bannerCpLogo}>
+        <div>
           <center>
-            <img
-              style={cpLogoStyle}
-              src={cpLogo}
-              alt="Culture Project Logo"
-              width={300}
-            />
+            <img src={cpLogo} alt="Culture Project Logo" width={300} />
           </center>
         </div>
         <div className={styles.bannerTitleContainer} style={rubikDirtFont}>
@@ -159,6 +155,40 @@ const IndexPage: React.FC<PageProps> = () => {
             <BannerLinkButton linkPath="some" label="THE JOURNEY" withBorder />
           </div>
           to see what why we think this.
+        </div>
+      </div>
+
+      <div className={styles.wantToHearMoreSection}>
+        <H1Red>
+          <WhiteText>Want to hear more?</WhiteText>
+        </H1Red>
+        <div className={styles.wantToHearMoreSection_Text1}>
+          <WhiteText>
+            Suscribe to our emails for resources and articles from the Culture
+            Project. Keep up to date with future events and acitvities.
+          </WhiteText>
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="Email"
+            className={styles.wantToHearMoreSection_Input}
+          />
+          <input
+            type="text"
+            placeholder="First Name"
+            className={styles.wantToHearMoreSection_Input}
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            className={styles.wantToHearMoreSection_Input}
+          />
+        </div>
+        <div>
+          <button className={styles.wantToHearMoreSection_SubscribeButton}>
+            <h2>SUBSCRIBE</h2>
+          </button>
         </div>
       </div>
     </main>

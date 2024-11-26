@@ -5,3 +5,7 @@ body {
   font-family: Outfit, -apple-system, Roboto, sans-serif, serif;
   font-weight: 400;
 }
+
+button {
+  cursor: pointer;
+}
