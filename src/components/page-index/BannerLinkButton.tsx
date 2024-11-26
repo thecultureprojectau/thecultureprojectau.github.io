@@ -12,7 +12,7 @@ export const BannerLinkButton: React.FC<Props> = (props) => {
   const { linkPath, label, withBorder = false } = props;
 
   return (
-    <Link to={linkPath} className={styles.link}>
+    <Link to={linkPath}>
       <button
         className={styles.btn}
         style={withBorder ? { outlineWidth: "2px" } : {}}

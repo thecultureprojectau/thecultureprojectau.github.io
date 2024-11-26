@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { HeadFC, PageProps } from "gatsby";
+import { Link, type HeadFC, type PageProps } from "gatsby";
 
 const pageStyles = {
   backgroundColor: "#FFFFFF",
@@ -37,6 +37,10 @@ const Divider: React.FC = () => {
 
 const WhiteText: React.FC<{ children: React.ReactNode }> = (props) => {
   return <p className={styles.whiteText}>{props.children}</p>;
+};
+
+const FooterRedText: React.FC<{ children: React.ReactNode }> = (props) => {
+  return <text className={styles.footerRedText}>{props.children}</text>;
 };
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -191,6 +195,63 @@ const IndexPage: React.FC<PageProps> = () => {
           </button>
         </div>
       </div>
+
+      <div className={styles.footer}>
+        <div>
+          <img src={cpLogo} alt="Culture Project Logo" width={200} />
+        </div>
+        <div className={styles.row}>
+          <div className={styles.col}>
+            Contact Us
+            <br />
+            <br />
+            PO. Box 00
+            <br />
+            Sydney 2000
+            <br />
+            <br />
+            1800 000 0000
+            <br />
+            <br />
+            aleach@thecultureproject.com.au
+          </div>
+          <div className={styles.col}>
+            <FooterRedText>Online Community</FooterRedText>
+            <br />
+            /cultureprojectaustralia
+            <br />
+            /cultureproj_au
+            <br />
+            /cultureproj_au
+            <br />
+            The Culture Project Australia
+          </div>
+          <div className={styles.col}>
+            <Link to="some">
+              <FooterRedText>THE JOURNEY</FooterRedText>
+            </Link>
+            <br />
+            <Link to="some">
+              <FooterRedText>IS CP FOR ME?</FooterRedText>
+            </Link>
+            <br />
+            <Link to="some">
+              <FooterRedText>LEADERS IMMERSION PROGRAM</FooterRedText>
+            </Link>
+            <br />
+            <Link to="some">
+              <FooterRedText>PARTNERS</FooterRedText>
+            </Link>
+          </div>
+        </div>
+        <Divider />
+        <p>
+          © 2024 The Culture Project Australia. All Rights Reserved. • The
+          Culture Project Australia is a nonprofit organization. Your
+          contribution is tax-deductible to the fullest extent permitted by law.
+          • No goods or services were received in exchange for your contribution
+        </p>
+      </div>
     </main>
   );
 };
@@ -199,7 +260,7 @@ export default IndexPage;
 
 export const Head: HeadFC = () => (
   <>
-    <title>Home Page</title>
+    <title>The Culture Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

@@ -156,6 +156,19 @@
   letter-spacing: 0.25em;
 }
 
+.footer {
+  margin: 20px;
+}
+
+.footerRedText {
+  font-family: "Rubik Dirt";
+  font-weight: 400;
+  color: #ca4037;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.8rem;
+}
+
 .h1Red {
   font-family: Rubik Dirt;
   font-weight: 600;
