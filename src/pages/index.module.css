@@ -5,3 +5,16 @@
   background-position: bottom;
   min-height: 80vh;
 }
+
+.bannerLinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  padding: 40px 0;
+}
+
+.bannerTitleContainer h1 {
+  font-size: 4em;
+  letter-spacing: 0.5em;
+}

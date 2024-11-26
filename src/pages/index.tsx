@@ -136,11 +136,8 @@ const links = [
   },
 ];
 
-const bannerContainer = { backgroundImage: "url(./images/CP-136.3.png)" };
-const bannerLinks = {};
 const bannerCpLogo = {};
 const cpLogoStyle = {};
-const bannerTitleContainer = {};
 
 const rubikDirtFont = {
   fontFamily: "Rubik Dirt",
@@ -148,27 +145,24 @@ const rubikDirtFont = {
   color: "#ca4037",
   textTransform: "uppercase",
 };
-const h1Style = {
-  ...rubikDirtFont,
-  fontSize: "4em",
-};
-const h2Style = {
-  ...rubikDirtFont,
-  fontSize: "4em",
-};
 
 import cpLogo from "../images/Transparent Background_CP_Logo_2024-02.png";
 
-import * as indexStyles from "./index.module.css";
+import * as styles from "./index.module.css";
+import { BannerLinkButton } from "../components/page-index/BannerLinkButton";
 
 const IndexPage: React.FC<PageProps> = () => {
-  console.log(indexStyles);
-
   return (
     <main style={pageStyles}>
       {/* banner */}
-      <div className={indexStyles.bannerContainer}>
-        <div style={bannerLinks}></div>
+      <div className={styles.bannerContainer}>
+        <div className={styles.bannerLinksContainer}>
+          <BannerLinkButton linkPath="some" label="WHERE ARE WE?" />
+          <BannerLinkButton linkPath="some" label="THE JOURNEY" />
+          <BannerLinkButton linkPath="some" label="IS CP FOR ME?" />
+          <BannerLinkButton linkPath="some" label="LEADERS IMMERSION PROGRAM" />
+          <BannerLinkButton linkPath="some" label="PARTNERS" />
+        </div>
         <div style={bannerCpLogo}>
           <center>
             <img
@@ -179,9 +173,9 @@ const IndexPage: React.FC<PageProps> = () => {
             />
           </center>
         </div>
-        <div style={bannerTitleContainer}>
+        <div className={styles.bannerTitleContainer} style={rubikDirtFont}>
           <center>
-            <h1 style={h1Style}>
+            <h1>
               Where
               <br />
               are we?
