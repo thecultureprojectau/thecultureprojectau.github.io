@@ -73,6 +73,11 @@
   flex: 1;
 }
 
+.statsIcon {
+  height: 200px;
+  margin: 20px;
+}
+
 .statsGrayText {
   color: #3f3f40;
   font-size: 2rem;

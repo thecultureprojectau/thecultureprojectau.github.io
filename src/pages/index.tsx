@@ -124,21 +124,32 @@ const IndexPage: React.FC<PageProps> = () => {
           <H1Orange>Stats</H1Orange>
         </div>
         <div className={styles.statsSection}>
-          <div>*Pie chart here</div>
+          <div>
+            <img src={image31PctMales} className={styles.statsIcon} />
+            <img
+              src={image49PctUpperHighSchoolers}
+              className={styles.statsIcon}
+            />
+          </div>
           <div className={styles.statsGrayText}>
             Reported experiencing unwanted sexual behaviour
           </div>
         </div>
         <Divider />
         <div className={styles.statsSection}>
-          <div>*Pie chart here</div>
+          <div>
+            <img src={image30PctDivorceRate} className={styles.statsIcon} />
+          </div>
           <div className={styles.statsGrayText}>
             The number of Australian marriages ending in divorce
           </div>
         </div>
         <Divider />
         <div className={styles.statsSection}>
-          <div>*Pie chart here</div>
+          <div>
+            <img src={image17PctYoungWomen} className={styles.statsIcon} />
+            <img src={image25PctYoungMen} className={styles.statsIcon} />
+          </div>
           <div className={styles.statsGrayText}>
             Number of people experiencing social isolation.
           </div>
