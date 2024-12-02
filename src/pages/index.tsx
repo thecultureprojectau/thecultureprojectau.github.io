@@ -126,6 +126,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className={styles.statsSection}>
           <div>
             <img src={image31PctMales} className={styles.statsIcon} />
+          </div>
+          <div>
             <img
               src={image49PctUpperHighSchoolers}
               className={styles.statsIcon}
@@ -148,6 +150,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className={styles.statsSection}>
           <div>
             <img src={image17PctYoungWomen} className={styles.statsIcon} />
+          </div>
+          <div>
             <img src={image25PctYoungMen} className={styles.statsIcon} />
           </div>
           <div className={styles.statsGrayText}>
@@ -158,69 +162,78 @@ const IndexPage: React.FC<PageProps> = () => {
       </div>
 
       <div className={styles.whereAreWeGoingSection}>
-        <div className={styles.whiteFadeDiv}></div>
-        <div className={styles.whereAreWeGoingSection_Text1}>
-          <div className={styles.bannerTitleContainer} style={rubikDirtFont}>
-            <h1>Where are we Going?</h1>
+        <div className={styles.rowNonFlex}>
+          <div className={styles.whereAreWeGoingSection_Text1}>
+            <div className={styles.bannerTitleContainer} style={rubikDirtFont}>
+              <h1>Where are we Going?</h1>
+            </div>
           </div>
-        </div>
-        <p className={styles.whereAreWeGoingSection_Text2}>
-          <GrayText>
-            The Culture Project believes that genuine freedom is achievable,
-            that a fulfilling life is not an accident, that real love is
-            possible, that we can learn what makes friendships great, that our
-            lives are built for meaning, that each of us matters more than we
-            know, and that we can become people who build relationships,
-            friendships, families and communities full of growth, life and love.
-          </GrayText>
-        </p>
-        <div>
-          Go to{" "}
-          <div className={styles.theJourneyCtaInline}>
-            <BannerLinkButton linkPath="some" label="THE JOURNEY" withBorder />
+          <p className={styles.whereAreWeGoingSection_Text2}>
+            <GrayText>
+              The Culture Project believes that genuine freedom is achievable,
+              that a fulfilling life is not an accident, that real love is
+              possible, that we can learn what makes friendships great, that our
+              lives are built for meaning, that each of us matters more than we
+              know, and that we can become people who build relationships,
+              friendships, families and communities full of growth, life and
+              love.
+            </GrayText>
+          </p>
+          <div>
+            Go to{" "}
+            <div className={styles.theJourneyCtaInline}>
+              <BannerLinkButton
+                linkPath="some"
+                label="THE JOURNEY"
+                withBorder
+              />
+            </div>
+            to see what why we think this.
           </div>
-          to see what why we think this.
         </div>
       </div>
 
       <div className={styles.wantToHearMoreSection}>
-        <H1Red>
-          <WhiteText>Want to hear more?</WhiteText>
-        </H1Red>
-        <div className={styles.wantToHearMoreSection_Text1}>
-          <WhiteText>
-            Suscribe to our emails for resources and articles from the Culture
-            Project. Keep up to date with future events and acitvities.
-          </WhiteText>
-        </div>
-        <div>
-          <input
-            type="text"
-            placeholder="Email"
-            className={styles.wantToHearMoreSection_Input}
-          />
-          <input
-            type="text"
-            placeholder="First Name"
-            className={styles.wantToHearMoreSection_Input}
-          />
-          <input
-            type="text"
-            placeholder="Last Name"
-            className={styles.wantToHearMoreSection_Input}
-          />
-        </div>
-        <div>
-          <button className={styles.wantToHearMoreSection_SubscribeButton}>
-            <h2>SUBSCRIBE</h2>
-          </button>
+        <div className={styles.rowNonFlex}>
+          <H1Red>
+            <WhiteText>Want to hear more?</WhiteText>
+          </H1Red>
+          <div className={styles.wantToHearMoreSection_Text1}>
+            <WhiteText>
+              Suscribe to our emails for resources and articles from the Culture
+              Project. Keep up to date with future events and acitvities.
+            </WhiteText>
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Email"
+              className={styles.wantToHearMoreSection_Input}
+            />
+            <input
+              type="text"
+              placeholder="First Name"
+              className={styles.wantToHearMoreSection_Input}
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              className={styles.wantToHearMoreSection_Input}
+            />
+          </div>
+          <div>
+            <button className={styles.wantToHearMoreSection_SubscribeButton}>
+              <h2>SUBSCRIBE</h2>
+            </button>
+          </div>
         </div>
       </div>
 
       <div className={styles.footer}>
-        <div>
+        <div className={styles.row}>
           <img src={cpLogo} alt="Culture Project Logo" width={200} />
         </div>
+
         <div className={styles.row}>
           <div className={styles.col}>
             Contact Us
@@ -274,12 +287,15 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
         <Divider />
-        <p>
-          © 2024 The Culture Project Australia. All Rights Reserved. • The
-          Culture Project Australia is a nonprofit organization. Your
-          contribution is tax-deductible to the fullest extent permitted by law.
-          • No goods or services were received in exchange for your contribution
-        </p>
+        <div className={styles.row}>
+          <p>
+            © 2024 The Culture Project Australia. All Rights Reserved. • The
+            Culture Project Australia is a nonprofit organization. Your
+            contribution is tax-deductible to the fullest extent permitted by
+            law. • No goods or services were received in exchange for your
+            contribution
+          </p>
+        </div>
       </div>
     </main>
   );

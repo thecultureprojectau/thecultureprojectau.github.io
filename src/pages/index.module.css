@@ -22,11 +22,21 @@
 
 .row {
   display: flex;
-  margin: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 992px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
 .rowNonFlex {
-  margin: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 992px;
 }
 
 .col {
@@ -38,8 +48,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding: 20px;
 }
 
 .choicesImage {
@@ -66,22 +74,29 @@
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .statsSection {
+    flex-direction: column;
+  }
+}
+
 .statsSection > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
 }
 
 .statsIcon {
   height: 200px;
   margin: 20px;
+  flex: 0;
 }
 
 .statsGrayText {
   color: #3f3f40;
   font-size: 2rem;
   font-weight: bold;
+  flex: 1;
 }
 
 .divider {
@@ -136,6 +151,7 @@
 .wantToHearMoreSection_Input {
   background-color: white;
   margin-right: 10px;
+  margin-bottom: 10px;
   padding: 20px;
   border-radius: 20px;
   border: 0;
