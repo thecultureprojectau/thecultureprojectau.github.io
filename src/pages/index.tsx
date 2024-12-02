@@ -59,11 +59,14 @@ const IndexPage: React.FC<PageProps> = () => {
       {/* banner */}
       <div className={styles.bannerContainer}>
         <div className={styles.bannerLinksContainer}>
-          <BannerLinkButton linkPath="some" label="WHERE ARE WE?" />
-          <BannerLinkButton linkPath="some" label="THE JOURNEY" />
-          <BannerLinkButton linkPath="some" label="IS CP FOR ME?" />
-          <BannerLinkButton linkPath="some" label="LEADERS IMMERSION PROGRAM" />
-          <BannerLinkButton linkPath="some" label="PARTNERS" />
+          <BannerLinkButton linkPath="/" label="WHERE ARE WE?" />
+          <BannerLinkButton linkPath="/the-journey" label="THE JOURNEY" />
+          <BannerLinkButton linkPath="/is-cp-for-me" label="IS CP FOR ME?" />
+          <BannerLinkButton
+            linkPath="/leaders-immersion-program"
+            label="LEADERS IMMERSION PROGRAM"
+          />
+          <BannerLinkButton linkPath="/partners" label="PARTNERS" />
         </div>
         <div>
           <center>
@@ -247,41 +250,57 @@ const IndexPage: React.FC<PageProps> = () => {
             1800 000 0000
             <br />
             <br />
-            aleach@thecultureproject.com.au
+            <a href="mailto:aleach@thecultureproject.com.au">
+              aleach@thecultureproject.com.au
+            </a>
           </div>
           <div className={styles.col}>
             <FooterRedText>Online Community</FooterRedText>
-            <div className={styles.socialLinkContainer}>
-              <img src={socialFbLogo} className={styles.socialLogo} />
-              /cultureprojectaustralia
-            </div>
-            <div className={styles.socialLinkContainer}>
-              <img src={socialTwitterLogo} className={styles.socialLogo} />
-              /cultureproj_au
-            </div>
-            <div className={styles.socialLinkContainer}>
-              <img src={socialInstagramLogo} className={styles.socialLogo} />
-              /cultureproj_au
-            </div>
-            <div className={styles.socialLinkContainer}>
-              <img src={socialYoutubeLogo} className={styles.socialLogo} />
-              The Culture Project Australia
-            </div>
+            <a
+              href="https://www.facebook.com/cultureprojectaustralia"
+              target="_blank"
+            >
+              <div className={styles.socialLinkContainer}>
+                <img src={socialFbLogo} className={styles.socialLogo} />
+                /cultureprojectaustralia
+              </div>
+            </a>
+            <a href="https://x.com/restoreau" target="_blank">
+              <div className={styles.socialLinkContainer}>
+                <img src={socialTwitterLogo} className={styles.socialLogo} />
+                /cultureproj_au
+              </div>
+            </a>
+            <a href="https://www.instagram.com/cultureproj_au/" target="_blank">
+              <div className={styles.socialLinkContainer}>
+                <img src={socialInstagramLogo} className={styles.socialLogo} />
+                /cultureproj_au
+              </div>
+            </a>
+            <a
+              href="https://www.youtube.com/@thecultureprojectaustralia6153"
+              target="_blank"
+            >
+              <div className={styles.socialLinkContainer}>
+                <img src={socialYoutubeLogo} className={styles.socialLogo} />
+                The Culture Project Australia
+              </div>
+            </a>
           </div>
           <div className={styles.col}>
-            <Link to="some">
+            <Link to="/the-journey">
               <FooterRedText>THE JOURNEY</FooterRedText>
             </Link>
             <br />
-            <Link to="some">
+            <Link to="/is-cp-for-me">
               <FooterRedText>IS CP FOR ME?</FooterRedText>
             </Link>
             <br />
-            <Link to="some">
+            <Link to="/leaders-immersion-program">
               <FooterRedText>LEADERS IMMERSION PROGRAM</FooterRedText>
             </Link>
             <br />
-            <Link to="some">
+            <Link to="/partners">
               <FooterRedText>PARTNERS</FooterRedText>
             </Link>
           </div>
