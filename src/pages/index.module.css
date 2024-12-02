@@ -1,5 +1,5 @@
 .bannerContainer {
-  background-image: url(../images/CP-136.3.png);
+  background-image: url(../images/CP_WebImages.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -87,7 +87,7 @@
 .whereAreWeGoingSection {
   position: relative;
 
-  background-image: url(../images/CP-44.png);
+  background-image: url(../images/CP_WebImages2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -154,6 +154,16 @@
 .wantToHearMoreSection_SubscribeButton > h2 {
   margin: 0;
   letter-spacing: 0.25em;
+}
+
+.socialLinkContainer {
+  display: flex;
+  margin: 5px 0;
+}
+
+.socialLogo {
+  height: 20px;
+  margin-right: 5px;
 }
 
 .footer {

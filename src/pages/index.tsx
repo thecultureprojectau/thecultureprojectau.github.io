@@ -14,7 +14,17 @@ const rubikDirtFont = {
   textTransform: "uppercase",
 };
 
-import cpLogo from "../images/Transparent Background_CP_Logo_2024-02.png";
+// images
+import cpLogo from "../images/CP_Logo_modified.png";
+import image17PctYoungWomen from "../images/CP_WebImages3.png";
+import image25PctYoungMen from "../images/CP_WebImages4.png";
+import image31PctMales from "../images/CP_WebImages5.png";
+import image49PctUpperHighSchoolers from "../images/CP_WebImages6.png";
+import image30PctDivorceRate from "../images/CP_WebImages7.png";
+import socialFbLogo from "../images/CP_WebImages8.png";
+import socialTwitterLogo from "../images/CP_WebImages9.png";
+import socialInstagramLogo from "../images/CP_WebImages10.png";
+import socialYoutubeLogo from "../images/CP_WebImages11.png";
 
 import * as styles from "./index.module.css";
 import { BannerLinkButton } from "../components/page-index/BannerLinkButton";
@@ -153,7 +163,7 @@ const IndexPage: React.FC<PageProps> = () => {
             friendships, families and communities full of growth, life and love.
           </GrayText>
         </p>
-        <div className={styles.theJourneyText}>
+        <div>
           Go to{" "}
           <div className={styles.theJourneyCtaInline}>
             <BannerLinkButton linkPath="some" label="THE JOURNEY" withBorder />
@@ -217,14 +227,22 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
           <div className={styles.col}>
             <FooterRedText>Online Community</FooterRedText>
-            <br />
-            /cultureprojectaustralia
-            <br />
-            /cultureproj_au
-            <br />
-            /cultureproj_au
-            <br />
-            The Culture Project Australia
+            <div className={styles.socialLinkContainer}>
+              <img src={socialFbLogo} className={styles.socialLogo} />
+              /cultureprojectaustralia
+            </div>
+            <div className={styles.socialLinkContainer}>
+              <img src={socialTwitterLogo} className={styles.socialLogo} />
+              /cultureproj_au
+            </div>
+            <div className={styles.socialLinkContainer}>
+              <img src={socialInstagramLogo} className={styles.socialLogo} />
+              /cultureproj_au
+            </div>
+            <div className={styles.socialLinkContainer}>
+              <img src={socialYoutubeLogo} className={styles.socialLogo} />
+              The Culture Project Australia
+            </div>
           </div>
           <div className={styles.col}>
             <Link to="some">
