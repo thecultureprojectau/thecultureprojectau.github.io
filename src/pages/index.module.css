@@ -6,15 +6,6 @@
   min-height: 80vh;
 }
 
-.bannerLinksContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-
-  padding: 40px 10px;
-}
-
 .bannerTitleContainer h1 {
   font-size: 4em;
   letter-spacing: 0.5em;

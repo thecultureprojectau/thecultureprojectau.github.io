@@ -21,7 +21,7 @@ import socialInstagramLogo from "../images/CP_WebImages10.png";
 import socialYoutubeLogo from "../images/CP_WebImages11.png";
 
 import * as styles from "./index.module.css";
-import { BannerLinkButton } from "../components/page-index/BannerLinkButton";
+import { BannerLinkButton } from "../components/nav/BannerLinkButton";
 import {
   Col,
   Divider,
@@ -32,6 +32,7 @@ import {
   Row,
   WhiteText,
 } from "../components/common";
+import { NavLinks } from "../components/nav";
 
 const FooterRedText: React.FC<{ children: React.ReactNode }> = (props) => {
   return <text className={styles.footerRedText}>{props.children}</text>;
@@ -41,16 +42,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main>
       <div className={styles.bannerContainer}>
-        <div className={styles.bannerLinksContainer}>
-          <BannerLinkButton linkPath="/" label="WHERE ARE WE?" />
-          <BannerLinkButton linkPath="/the-journey" label="THE JOURNEY" />
-          <BannerLinkButton linkPath="/is-cp-for-me" label="IS CP FOR ME?" />
-          <BannerLinkButton
-            linkPath="/leaders-immersion-program"
-            label="LEADERS IMMERSION PROGRAM"
-          />
-          <BannerLinkButton linkPath="/partners" label="PARTNERS" />
-        </div>
+        <NavLinks />
         <div>
           <center>
             <img src={cpLogo} alt="Culture Project Logo" width={300} />
