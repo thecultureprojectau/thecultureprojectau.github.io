@@ -41,12 +41,13 @@ const IsCPForMePage: React.FC = () => {
       </div>
 
       <Row>
+        <H1Red>WHY WOULD I WANT TO TRY THE CULTURE PROJECT?</H1Red>
+      </Row>
+      <Row layoutColReverse>
         <Col>
-          <H1Red>WHY WOULD I WANT TO TRY THE CULTURE PROJECT?</H1Red>
-          <span>
-            Culture Project is for anyone who asks themselves these questions:
-          </span>
+          Culture Project is for anyone who asks themselves these questions:
         </Col>
+        <Col>image here</Col>
       </Row>
 
       <Row>grid content here</Row>
@@ -57,7 +58,7 @@ const IsCPForMePage: React.FC = () => {
         </center>
       </Row>
 
-      <Row>
+      <Row layoutColReverse>
         <Col>
           <H1Orange>Wanderlust Series</H1Orange>
           Culture Project runs a series of gatherings for young adults to dive
@@ -94,7 +95,7 @@ const IsCPForMePage: React.FC = () => {
         </Col>
       </Row>
 
-      <Row>
+      <Row layoutColReverse>
         <Col>
           <H1Orange>WINTER RETREAT</H1Orange>
           Once a year in winter, those who want to do some interior work gather

@@ -21,12 +21,19 @@ export const WhiteText: React.FC<{ children: React.ReactNode }> = (props) => {
   return <p className={styles.whiteText}>{props.children}</p>;
 };
 
-export const Row: React.FC<{ children: React.ReactNode; flex?: boolean }> = (
-  props
-) => {
+export const Row: React.FC<{
+  children: React.ReactNode;
+  flex?: boolean;
+  layoutColReverse?: boolean;
+}> = (props) => {
   const isNonFlex = props.flex === false;
+  const isFlexDirectionColReverse = props.layoutColReverse === true;
   return (
-    <div className={`${styles.row} ${isNonFlex && styles.rowNonFlex}`}>
+    <div
+      className={`${styles.row} ${isNonFlex && styles.rowNonFlex} ${
+        isFlexDirectionColReverse && styles.flexDirectionColReverse
+      }`}
+    >
       {props.children}
     </div>
   );

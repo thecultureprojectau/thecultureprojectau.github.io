@@ -36,11 +36,21 @@
   max-width: 992px;
 }
 
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
 .rowNonFlex {
   display: block;
   margin: 0 auto;
   padding: 20px;
   max-width: 992px;
+}
+
+.flexDirectionColReverse {
+  flex-direction: column-reverse;
 }
 
 .col {
