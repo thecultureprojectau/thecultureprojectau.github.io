@@ -1,0 +1,22 @@
+.footer {
+  margin: 20px;
+}
+
+.footerRedText {
+  font-family: "Rubik Dirt";
+  font-weight: 400;
+  color: #ca4037;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.8rem;
+}
+
+.socialLinkContainer {
+  display: flex;
+  margin: 5px 0;
+}
+
+.socialLogo {
+  height: 20px;
+  margin-right: 5px;
+}

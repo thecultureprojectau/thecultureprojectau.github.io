@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link, type PageProps } from "gatsby";
+import { type PageProps } from "gatsby";
 
 const rubikDirtFont = {
   fontFamily: "Rubik Dirt",
@@ -15,10 +15,6 @@ import image25PctYoungMen from "../images/CP_WebImages4.png";
 import image31PctMales from "../images/CP_WebImages5.png";
 import image49PctUpperHighSchoolers from "../images/CP_WebImages6.png";
 import image30PctDivorceRate from "../images/CP_WebImages7.png";
-import socialFbLogo from "../images/CP_WebImages8.png";
-import socialTwitterLogo from "../images/CP_WebImages9.png";
-import socialInstagramLogo from "../images/CP_WebImages10.png";
-import socialYoutubeLogo from "../images/CP_WebImages11.png";
 
 import * as styles from "./index.module.css";
 import { BannerLinkButton } from "../components/nav/BannerLinkButton";
@@ -28,15 +24,12 @@ import {
   GrayText,
   H1Orange,
   H1Red,
+  PageFooter,
   PageHead,
   Row,
   WhiteText,
 } from "../components/common";
 import { NavLinks } from "../components/nav";
-
-const FooterRedText: React.FC<{ children: React.ReactNode }> = (props) => {
-  return <text className={styles.footerRedText}>{props.children}</text>;
-};
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -207,90 +200,7 @@ const IndexPage: React.FC<PageProps> = () => {
         </Row>
       </div>
 
-      <div className={styles.footer}>
-        <Row>
-          <img src={cpLogo} alt="Culture Project Logo" width={200} />
-        </Row>
-
-        <Row>
-          <Col>
-            Contact Us
-            <br />
-            <br />
-            PO. Box 00
-            <br />
-            Sydney 2000
-            <br />
-            <br />
-            1800 000 0000
-            <br />
-            <br />
-            <a href="mailto:aleach@thecultureproject.com.au">
-              aleach@thecultureproject.com.au
-            </a>
-          </Col>
-          <Col>
-            <FooterRedText>Online Community</FooterRedText>
-            <a
-              href="https://www.facebook.com/cultureprojectaustralia"
-              target="_blank"
-            >
-              <div className={styles.socialLinkContainer}>
-                <img src={socialFbLogo} className={styles.socialLogo} />
-                /cultureprojectaustralia
-              </div>
-            </a>
-            <a href="https://x.com/restoreau" target="_blank">
-              <div className={styles.socialLinkContainer}>
-                <img src={socialTwitterLogo} className={styles.socialLogo} />
-                /cultureproj_au
-              </div>
-            </a>
-            <a href="https://www.instagram.com/cultureproj_au/" target="_blank">
-              <div className={styles.socialLinkContainer}>
-                <img src={socialInstagramLogo} className={styles.socialLogo} />
-                /cultureproj_au
-              </div>
-            </a>
-            <a
-              href="https://www.youtube.com/@thecultureprojectaustralia6153"
-              target="_blank"
-            >
-              <div className={styles.socialLinkContainer}>
-                <img src={socialYoutubeLogo} className={styles.socialLogo} />
-                The Culture Project Australia
-              </div>
-            </a>
-          </Col>
-          <Col>
-            <Link to="/the-journey">
-              <FooterRedText>THE JOURNEY</FooterRedText>
-            </Link>
-            <br />
-            <Link to="/is-cp-for-me">
-              <FooterRedText>IS CP FOR ME?</FooterRedText>
-            </Link>
-            <br />
-            <Link to="/leaders-immersion-program">
-              <FooterRedText>LEADERS IMMERSION PROGRAM</FooterRedText>
-            </Link>
-            <br />
-            <Link to="/partners">
-              <FooterRedText>PARTNERS</FooterRedText>
-            </Link>
-          </Col>
-        </Row>
-        <Divider />
-        <Row>
-          <p>
-            © 2024 The Culture Project Australia. All Rights Reserved. • The
-            Culture Project Australia is a nonprofit organization. Your
-            contribution is tax-deductible to the fullest extent permitted by
-            law. • No goods or services were received in exchange for your
-            contribution
-          </p>
-        </Row>
-      </div>
+      <PageFooter />
     </main>
   );
 };
