@@ -1,13 +1,6 @@
 import * as React from "react";
 import { type PageProps } from "gatsby";
 
-const rubikDirtFont = {
-  fontFamily: "Rubik Dirt",
-  fontWeight: 600,
-  color: "#ca4037",
-  textTransform: "uppercase",
-};
-
 // images
 import cpLogo from "../images/CP_Logo_modified.png";
 import image17PctYoungWomen from "../images/CP_WebImages3.png";
@@ -17,7 +10,10 @@ import image49PctUpperHighSchoolers from "../images/CP_WebImages6.png";
 import image30PctDivorceRate from "../images/CP_WebImages7.png";
 
 import * as styles from "./index.module.css";
-import { BannerLinkButton } from "../components/nav/BannerLinkButton";
+import {
+  BannerLinkButton,
+  BannerLinkInlineContainer,
+} from "../components/nav/BannerLinkButton";
 import {
   Col,
   Divider,
@@ -27,6 +23,7 @@ import {
   PageFooter,
   PageHead,
   Row,
+  rubikDirtFont,
   WhiteText,
 } from "../components/common";
 import { NavLinks } from "../components/nav";
@@ -152,13 +149,13 @@ const IndexPage: React.FC<PageProps> = () => {
           </p>
           <div>
             Go to{" "}
-            <div className={styles.theJourneyCtaInline}>
+            <BannerLinkInlineContainer>
               <BannerLinkButton
                 linkPath="some"
                 label="THE JOURNEY"
                 withBorder
               />
-            </div>
+            </BannerLinkInlineContainer>
             to see what why we think this.
           </div>
         </Row>

@@ -9,9 +9,3 @@ body {
 button {
   cursor: pointer;
 }
-
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-  }
-}

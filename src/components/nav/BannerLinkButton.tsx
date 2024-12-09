@@ -22,3 +22,11 @@ export const BannerLinkButton: React.FC<Props> = (props) => {
     </Link>
   );
 };
+
+export const BannerLinkInlineContainer: React.FC<{
+  children: React.ReactNode;
+}> = (props) => {
+  return (
+    <div className={styles.bannerLinkInlineContainer}>{props.children}</div>
+  );
+};
