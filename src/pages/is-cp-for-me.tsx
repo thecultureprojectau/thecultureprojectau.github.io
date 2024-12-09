@@ -4,9 +4,11 @@ import {
   GrayText,
   H1Orange,
   H1Red,
+  PageFooter,
   PageHead,
   Row,
   rubikDirtFont,
+  WantToHearMoreSection,
 } from "../components/common";
 import {
   BannerLinkButton,
@@ -112,14 +114,14 @@ const IsCPForMePage: React.FC = () => {
         <Col>image here</Col>
       </Row>
 
-      <div className={styles.whereAreWeGoingSection}>
+      <div className={styles.leadersImmersionProgramSection}>
         <Row flex={false}>
-          <div className={styles.whereAreWeGoingSection_Text1}>
+          <div className={styles.leadersImmersionProgramSection_Text1}>
             <div>
               <H1Orange>The Leaders Immersion Program</H1Orange>
             </div>
           </div>
-          <p className={styles.whereAreWeGoingSection_Text2}>
+          <p className={styles.leadersImmersionProgramSection_Text2}>
             <GrayText>
               At the heart of the Culture Project is a group of 18- 30 year-olds
               who decide to immerse themselves in learning about their identity,
@@ -140,6 +142,10 @@ const IsCPForMePage: React.FC = () => {
           </div>
         </Row>
       </div>
+
+      <WantToHearMoreSection />
+
+      <PageFooter />
     </main>
   );
 };

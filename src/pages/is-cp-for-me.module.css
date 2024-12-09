@@ -10,3 +10,23 @@
   font-size: 4em;
   letter-spacing: 0.5em;
 }
+
+.leadersImmersionProgramSection {
+  position: relative;
+
+  background-image: url(../images/CP_WebImages2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 80vh;
+
+  padding: 20px;
+}
+
+.leadersImmersionProgramSection_Text1 {
+  width: 80%;
+}
+
+.leadersImmersionProgramSection_Text2 {
+  width: 70%;
+}
