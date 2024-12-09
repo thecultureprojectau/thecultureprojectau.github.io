@@ -20,29 +20,6 @@
   letter-spacing: 0.5em;
 }
 
-.row {
-  display: flex;
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 992px;
-}
-
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
-.rowNonFlex {
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 992px;
-}
-
-.col {
-  flex: 1;
-}
-
 .choicesImageContainer {
   flex: 1;
   display: flex;

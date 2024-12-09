@@ -23,11 +23,13 @@ import socialYoutubeLogo from "../images/CP_WebImages11.png";
 import * as styles from "./index.module.css";
 import { BannerLinkButton } from "../components/page-index/BannerLinkButton";
 import {
+  Col,
   Divider,
   GrayText,
   H1Orange,
   H1Red,
   PageHead,
+  Row,
   WhiteText,
 } from "../components/common";
 
@@ -65,11 +67,11 @@ const IndexPage: React.FC<PageProps> = () => {
         </div>
       </div>
 
-      <div className={styles.row}>
+      <Row>
         <div className={styles.choicesImageContainer}>
           <div className={styles.choicesImage} />
         </div>
-        <div className={styles.col}>
+        <Col>
           <H1Red>We have more choices and options than ever before</H1Red>
           <GrayText>
             We hear so many opinions: What does it mean to be happy? What is
@@ -77,10 +79,10 @@ const IndexPage: React.FC<PageProps> = () => {
             love? What makes friendships work? Are all goals good or only some?
             How can I work towards things that do me good and not harm?
           </GrayText>
-        </div>
-      </div>
+        </Col>
+      </Row>
 
-      <div className={styles.rowNonFlex}>
+      <Row flex={false}>
         <div>
           <H1Orange>Quiz Time!</H1Orange>
           <GrayText>Take the quiz to see what others think</GrayText>
@@ -101,9 +103,9 @@ const IndexPage: React.FC<PageProps> = () => {
             things are getting harder to figure out.{" "}
           </GrayText>
         </div>
-      </div>
+      </Row>
 
-      <div className={styles.rowNonFlex}>
+      <Row flex={false}>
         <div>
           <H1Orange>Stats</H1Orange>
         </div>
@@ -143,10 +145,10 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
         <Divider />
-      </div>
+      </Row>
 
       <div className={styles.whereAreWeGoingSection}>
-        <div className={styles.rowNonFlex}>
+        <Row flex={false}>
           <div className={styles.whereAreWeGoingSection_Text1}>
             <div className={styles.bannerTitleContainer} style={rubikDirtFont}>
               <h1>Where are we Going?</h1>
@@ -174,11 +176,11 @@ const IndexPage: React.FC<PageProps> = () => {
             </div>
             to see what why we think this.
           </div>
-        </div>
+        </Row>
       </div>
 
       <div className={styles.wantToHearMoreSection}>
-        <div className={styles.rowNonFlex}>
+        <Row flex={false}>
           <H1Red>
             <WhiteText>Want to hear more?</WhiteText>
           </H1Red>
@@ -210,16 +212,16 @@ const IndexPage: React.FC<PageProps> = () => {
               <h2>SUBSCRIBE</h2>
             </button>
           </div>
-        </div>
+        </Row>
       </div>
 
       <div className={styles.footer}>
-        <div className={styles.row}>
+        <Row>
           <img src={cpLogo} alt="Culture Project Logo" width={200} />
-        </div>
+        </Row>
 
-        <div className={styles.row}>
-          <div className={styles.col}>
+        <Row>
+          <Col>
             Contact Us
             <br />
             <br />
@@ -234,8 +236,8 @@ const IndexPage: React.FC<PageProps> = () => {
             <a href="mailto:aleach@thecultureproject.com.au">
               aleach@thecultureproject.com.au
             </a>
-          </div>
-          <div className={styles.col}>
+          </Col>
+          <Col>
             <FooterRedText>Online Community</FooterRedText>
             <a
               href="https://www.facebook.com/cultureprojectaustralia"
@@ -267,8 +269,8 @@ const IndexPage: React.FC<PageProps> = () => {
                 The Culture Project Australia
               </div>
             </a>
-          </div>
-          <div className={styles.col}>
+          </Col>
+          <Col>
             <Link to="/the-journey">
               <FooterRedText>THE JOURNEY</FooterRedText>
             </Link>
@@ -284,10 +286,10 @@ const IndexPage: React.FC<PageProps> = () => {
             <Link to="/partners">
               <FooterRedText>PARTNERS</FooterRedText>
             </Link>
-          </div>
-        </div>
+          </Col>
+        </Row>
         <Divider />
-        <div className={styles.row}>
+        <Row>
           <p>
             © 2024 The Culture Project Australia. All Rights Reserved. • The
             Culture Project Australia is a nonprofit organization. Your
@@ -295,7 +297,7 @@ const IndexPage: React.FC<PageProps> = () => {
             law. • No goods or services were received in exchange for your
             contribution
           </p>
-        </div>
+        </Row>
       </div>
     </main>
   );

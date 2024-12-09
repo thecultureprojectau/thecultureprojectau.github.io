@@ -28,3 +28,21 @@
 .whiteText {
   color: white;
 }
+
+.row {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 992px;
+}
+
+.rowNonFlex {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 992px;
+}
+
+.col {
+  flex: 1;
+}

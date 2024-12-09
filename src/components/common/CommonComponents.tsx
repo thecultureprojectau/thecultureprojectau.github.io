@@ -20,3 +20,18 @@ export const Divider: React.FC = () => {
 export const WhiteText: React.FC<{ children: React.ReactNode }> = (props) => {
   return <p className={styles.whiteText}>{props.children}</p>;
 };
+
+export const Row: React.FC<{ children: React.ReactNode; flex?: boolean }> = (
+  props
+) => {
+  const isNonFlex = props.flex === false;
+  return (
+    <div className={`${styles.row} ${isNonFlex && styles.rowNonFlex}`}>
+      {props.children}
+    </div>
+  );
+};
+
+export const Col: React.FC<{ children: React.ReactNode }> = (props) => {
+  return <div className={styles.col}>{props.children}</div>;
+};
