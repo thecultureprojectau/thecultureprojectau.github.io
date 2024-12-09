@@ -1,11 +1,5 @@
 import * as React from "react";
-import { Link, type HeadFC, type PageProps } from "gatsby";
-
-const pageStyles = {
-  backgroundColor: "#FFFFFF",
-  fontFamily: "Outfit, -apple-system, Roboto, sans-serif, serif",
-  fontWeight: 400,
-};
+import { Link, type PageProps } from "gatsby";
 
 const rubikDirtFont = {
   fontFamily: "Rubik Dirt",
@@ -28,26 +22,14 @@ import socialYoutubeLogo from "../images/CP_WebImages11.png";
 
 import * as styles from "./index.module.css";
 import { BannerLinkButton } from "../components/page-index/BannerLinkButton";
-
-const H1Red: React.FC<{ children: React.ReactNode }> = (props) => {
-  return <h1 className={styles.h1Red}>{props.children}</h1>;
-};
-
-const H1Orange: React.FC<{ children: React.ReactNode }> = (props) => {
-  return <h1 className={styles.h1Orange}>{props.children}</h1>;
-};
-
-const GrayText: React.FC<{ children: React.ReactNode }> = (props) => {
-  return <p className={styles.grayText}>{props.children}</p>;
-};
-
-const Divider: React.FC = () => {
-  return <div className={styles.divider}></div>;
-};
-
-const WhiteText: React.FC<{ children: React.ReactNode }> = (props) => {
-  return <p className={styles.whiteText}>{props.children}</p>;
-};
+import {
+  Divider,
+  GrayText,
+  H1Orange,
+  H1Red,
+  PageHead,
+  WhiteText,
+} from "../components/common";
 
 const FooterRedText: React.FC<{ children: React.ReactNode }> = (props) => {
   return <text className={styles.footerRedText}>{props.children}</text>;
@@ -55,8 +37,7 @@ const FooterRedText: React.FC<{ children: React.ReactNode }> = (props) => {
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main style={pageStyles}>
-      {/* banner */}
+    <main>
       <div className={styles.bannerContainer}>
         <div className={styles.bannerLinksContainer}>
           <BannerLinkButton linkPath="/" label="WHERE ARE WE?" />
@@ -322,14 +303,4 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => (
-  <>
-    <title>The Culture Project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik+Dirt&display=swap"
-      rel="stylesheet"
-    />
-  </>
-);
+export const Head = PageHead;

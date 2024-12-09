@@ -1,0 +1,30 @@
+.h1Red {
+  font-family: Rubik Dirt;
+  font-weight: 600;
+  color: #ca4037;
+  text-transform: uppercase;
+
+  letter-spacing: 0.5em;
+}
+
+.h1Orange {
+  font-family: Rubik Dirt;
+  font-weight: 600;
+  color: #d6a542;
+  text-transform: uppercase;
+
+  letter-spacing: 0.5em;
+}
+
+.grayText {
+  color: #4a4845;
+}
+
+.divider {
+  height: 1px;
+  background-color: #818786;
+}
+
+.whiteText {
+  color: white;
+}
