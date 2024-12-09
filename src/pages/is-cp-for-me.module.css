@@ -1,0 +1,12 @@
+.bannerContainer {
+  /* background-image: url(../images/CP_WebImages.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 80vh;
+}
+
+.bannerTitleContainer h1 {
+  font-size: 4em;
+  letter-spacing: 0.5em;
+}
