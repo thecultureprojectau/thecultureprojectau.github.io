@@ -24,15 +24,18 @@ export const WhiteText: React.FC<{ children: React.ReactNode }> = (props) => {
 export const Row: React.FC<{
   children: React.ReactNode;
   flex?: boolean;
-  layoutColReverse?: boolean;
+  responsiveLayoutColReverse?: boolean;
+  style?: React.CSSProperties;
 }> = (props) => {
   const isNonFlex = props.flex === false;
-  const isFlexDirectionColReverse = props.layoutColReverse === true;
+  const isResponsiveFlexDirectionColReverse =
+    props.responsiveLayoutColReverse === true;
   return (
     <div
       className={`${styles.row} ${isNonFlex && styles.rowNonFlex} ${
-        isFlexDirectionColReverse && styles.flexDirectionColReverse
+        isResponsiveFlexDirectionColReverse && styles.flexDirectionColReverse
       }`}
+      style={props.style}
     >
       {props.children}
     </div>

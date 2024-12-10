@@ -49,8 +49,10 @@
   max-width: 992px;
 }
 
-.flexDirectionColReverse {
-  flex-direction: column-reverse;
+@media (max-width: 768px) {
+  .flexDirectionColReverse {
+    flex-direction: column-reverse;
+  }
 }
 
 .col {

@@ -15,7 +15,7 @@ export const WantToHearMoreSection: React.FC = () => {
             Project. Keep up to date with future events and acitvities.
           </WhiteText>
         </div>
-        <div>
+        <Row flex={false} style={{ padding: 0 }}>
           <input
             type="text"
             placeholder="Email"
@@ -31,7 +31,7 @@ export const WantToHearMoreSection: React.FC = () => {
             placeholder="Last Name"
             className={styles.wantToHearMoreSection_Input}
           />
-        </div>
+        </Row>
         <div>
           <button className={styles.wantToHearMoreSection_SubscribeButton}>
             <h2>SUBSCRIBE</h2>

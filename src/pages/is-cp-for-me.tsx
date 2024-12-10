@@ -18,6 +18,10 @@ import {
 import * as styles from "./is-cp-for-me.module.css";
 
 import cpLogo from "../images/CP_Logo_modified.png";
+import tryCultureProjectLogo from "../images/is-cp-for-me/Page Images2.png";
+import wanderlustSeriesLogo from "../images/is-cp-for-me/Page Images3.png";
+import springConferenceLogo from "../images/is-cp-for-me/Page Images4.png";
+import winterRetreatLogo from "../images/is-cp-for-me/Page Images5.png";
 
 const IsCPForMePage: React.FC = () => {
   return (
@@ -42,14 +46,20 @@ const IsCPForMePage: React.FC = () => {
         </div>
       </div>
 
-      <Row>
-        <H1Red>WHY WOULD I WANT TO TRY THE CULTURE PROJECT?</H1Red>
-      </Row>
-      <Row layoutColReverse>
+      <Row responsiveLayoutColReverse>
         <Col>
+          <H1Red>WHY WOULD I WANT TO TRY THE CULTURE PROJECT?</H1Red>
           Culture Project is for anyone who asks themselves these questions:
         </Col>
-        <Col>image here</Col>
+        <Col>
+          <center>
+            <img
+              src={tryCultureProjectLogo}
+              alt="Why would I want to try The Culture Project?"
+              width={500}
+            />
+          </center>
+        </Col>
       </Row>
 
       <Row>grid content here</Row>
@@ -60,7 +70,7 @@ const IsCPForMePage: React.FC = () => {
         </center>
       </Row>
 
-      <Row layoutColReverse>
+      <Row responsiveLayoutColReverse>
         <Col>
           <H1Orange>Wanderlust Series</H1Orange>
           Culture Project runs a series of gatherings for young adults to dive
@@ -77,11 +87,27 @@ const IsCPForMePage: React.FC = () => {
           </BannerLinkInlineContainer>{" "}
           page or follow our Instagram/Facebook for details.
         </Col>
-        <Col>image here</Col>
+        <Col>
+          <center>
+            <img
+              src={wanderlustSeriesLogo}
+              alt="Wanderlust Series"
+              width={300}
+            />
+          </center>
+        </Col>
       </Row>
 
       <Row>
-        <Col>image here</Col>
+        <Col>
+          <center>
+            <img
+              src={springConferenceLogo}
+              alt="Spring Conference"
+              width={500}
+            />
+          </center>{" "}
+        </Col>
         <Col>
           <H1Orange>Spring Conference</H1Orange>
           Each spring, the Culture Project runs a 4 day conference for 18-30
@@ -97,7 +123,7 @@ const IsCPForMePage: React.FC = () => {
         </Col>
       </Row>
 
-      <Row layoutColReverse>
+      <Row responsiveLayoutColReverse>
         <Col>
           <H1Orange>WINTER RETREAT</H1Orange>
           Once a year in winter, those who want to do some interior work gather
@@ -111,7 +137,11 @@ const IsCPForMePage: React.FC = () => {
           </BannerLinkInlineContainer>{" "}
           page or follow our Instagram/Facebook for details.
         </Col>
-        <Col>image here</Col>
+        <Col>
+          <center>
+            <img src={winterRetreatLogo} alt="Winter Retreat" width={300} />
+          </center>
+        </Col>
       </Row>
 
       <div className={styles.leadersImmersionProgramSection}>

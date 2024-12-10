@@ -1,8 +1,8 @@
 .bannerContainer {
-  /* background-image: url(../images/CP_WebImages.png); */
+  background-image: url(../images/is-cp-for-me/Page\ Images.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: left;
   min-height: 80vh;
 }
 
@@ -14,7 +14,7 @@
 .leadersImmersionProgramSection {
   position: relative;
 
-  background-image: url(../images/CP_WebImages2.png);
+  background-image: url(../images/is-cp-for-me/Page\ Images6.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
