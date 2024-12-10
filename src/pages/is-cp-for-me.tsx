@@ -62,7 +62,59 @@ const IsCPForMePage: React.FC = () => {
         </Col>
       </Row>
 
-      <Row>grid content here</Row>
+      <Row>
+        <table className={styles.tableQns}>
+          <tr>
+            <td className={styles.tableQnGray}>
+              Can I know what real love is?
+            </td>
+            <td className={styles.tableQnOrange}>
+              Is there a bigger meaning to my life? Can I find it?
+            </td>
+            <td className={styles.tableQnGray}>
+              How can I find genuine friendship?
+            </td>
+          </tr>
+          <tr>
+            <td className={styles.tableQnOrange}>
+              Is my life going somewhere good?
+            </td>
+            <td className={styles.tableQnGray}>
+              Can I tell when someone else loves me?
+            </td>
+            <td className={styles.tableQnOrange}>
+              Can I spot fake love in myself?
+            </td>
+          </tr>
+          <tr>
+            <td className={styles.tableQnGray}>
+              Do I matter? What makes me matter?
+            </td>
+            <td className={styles.tableQnOrange}>
+              How can I build a future that I want?
+            </td>
+            <td className={styles.tableQnGray}>
+              Can I know whether I’m building others up or doing the opposite?
+            </td>
+          </tr>
+          <tr>
+            <td className={styles.tableQnOrange}>
+              Do I have a unique purpose?
+            </td>
+            <td className={styles.tableQnGray}>
+              Does my life have any purpose?
+            </td>
+            <td className={styles.tableQnOrange}>
+              Can I be free of addictions?
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td className={styles.tableQnOrange}>Can I learn to forgive?</td>
+            <td></td>
+          </tr>
+        </table>
+      </Row>
 
       <Row flex={false}>
         <center>

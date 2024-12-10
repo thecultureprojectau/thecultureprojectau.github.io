@@ -11,6 +11,32 @@
   letter-spacing: 0.5em;
 }
 
+.tableQns {
+  border-collapse: collapse;
+}
+.tableQns td {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid black;
+  border-left: 0;
+  border-top: 0;
+}
+.tableQns td:last-child {
+  border-right: 0;
+}
+.tableQns tr:last-child td {
+  border-bottom: 0;
+}
+
+.tableQnGray {
+  font-family: Rubik Dirt;
+  color: #4b4b4a;
+}
+.tableQnOrange {
+  font-family: Rubik Dirt;
+  color: #d6a542;
+}
+
 .leadersImmersionProgramSection {
   position: relative;
 
