@@ -6,15 +6,16 @@ interface Props {
   linkPath: string;
   label: string;
   withBorder?: boolean;
+  invertColor?: boolean;
 }
 
 export const BannerLinkButton: React.FC<Props> = (props) => {
-  const { linkPath, label, withBorder = false } = props;
+  const { linkPath, label, withBorder = false, invertColor = false } = props;
 
   return (
     <Link to={linkPath}>
       <button
-        className={styles.btn}
+        className={`${styles.btn} ${invertColor && styles.btnInvertColor}`}
         style={withBorder ? { outlineWidth: "2px" } : {}}
       >
         {label}

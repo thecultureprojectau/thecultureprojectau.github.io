@@ -20,3 +20,8 @@
   display: inline-block;
   margin: 0 5px;
 }
+
+.btnInvertColor {
+  color: white;
+  outline-color: white;
+}
