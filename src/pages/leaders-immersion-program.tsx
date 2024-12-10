@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Col,
+  H1Orange,
   H1Red,
   PageFooter,
   PageHead,
@@ -127,7 +128,70 @@ const LeadersImmersionProgramPage: React.FC = () => {
         </center>
       </Row>
 
-      <Row>Content here</Row>
+      <Row>
+        <div className={styles.lpYearEventsGrid}>
+          <div>
+            <div className={styles.lpYearEventsGridNumberLabel}>1</div>
+            <H1Orange>Welcome and Training Week</H1Orange>
+            We start the year with one week of introduction to the Culture
+            Project mission, foundation in prayer, community time, and training
+            in support raising
+          </div>
+          <div>
+            <div className={styles.lpYearEventsGridNumberLabel}>2</div>
+            <H1Orange>December Support Raising</H1Orange>
+            Following Welcome and Training Week, CP Leaders undertake three to
+            four weeks of support raising to raise financial support for their
+            year in the program. See page 10 for details.
+          </div>
+          <div>
+            <div className={styles.lpYearEventsGridNumberLabel}>3</div>
+            <H1Orange>Summer Formation</H1Orange>
+            This is four weeks of formation in identity and transformation
+            authentic love and relationships, integrating your interior life,
+            relational virtue, evangelisation, masculinity and femininity,
+            purpose and selflessness. There are also times of spiritual growth
+            through an introductory retreat, daily prayer, daily Mass, and
+            serving one another in community life... and very importantly: we
+            also have a lot of fun!
+          </div>
+          <div>
+            <div className={styles.lpYearEventsGridNumberLabel}>4</div>
+            <H1Orange>Community Days</H1Orange>
+            Here we gather for one day per week of formation, community and
+            mission preparation, in a central location. We also prepare to run
+            our outreach missions.
+          </div>
+          <div>
+            <div className={styles.lpYearEventsGridNumberLabel}>5</div>
+            <H1Orange>Young Adult and School Outreach</H1Orange>
+            Young adult outreach mainly happens through our Young Adult Series
+            which are three series running for 5-6 weeks each, where young
+            adults gather once a week on a weeknight or Saturday afternoon.
+            School Outreach is done by a separate team who go into schools and
+            speak with students about personal value, finding purpose and living
+            genuine love.
+          </div>
+          <div>
+            <div className={styles.lpYearEventsGridNumberLabel}>6</div>
+            <H1Orange>Interior Integration Retreat</H1Orange>A multiple-day
+            retreat based on the integration of the whole person. This retreat
+            is run by Culture Project staff and is available to both
+            participants in the LP and members of the public
+          </div>
+          <div>
+            <div className={styles.lpYearEventsGridNumberLabel}>7</div>
+            <H1Orange>Spring Conference</H1Orange>
+            Running a 4-day conference for young people, focusing on theology of
+            the body, relational virtue, identity and purpose.
+          </div>
+          <div>
+            <div className={styles.lpYearEventsGridNumberLabel}>8</div>
+            <H1Orange>Mission Mentor</H1Orange>A monthly meeting with a mission
+            mentor, through the Catholic Psych Institute.
+          </div>
+        </div>
+      </Row>
 
       <Row flex={false}>
         <center>

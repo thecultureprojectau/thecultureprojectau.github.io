@@ -49,3 +49,26 @@
     padding-right: 0;
   }
 }
+
+.lpYearEventsGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.lpYearEventsGrid > div {
+  margin: 20px;
+  position: relative;
+}
+.lpYearEventsGridNumberLabel {
+  color: gray;
+  font-size: 4em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .lpYearEventsGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
