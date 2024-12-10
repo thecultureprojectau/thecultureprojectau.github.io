@@ -71,9 +71,8 @@ const LeadersImmersionProgramPage: React.FC = () => {
         <Col>Image here</Col>
       </Row>
 
-      <Row>
-        <Col></Col>
-        <Col>
+      <Row className={styles.whatWillIReceiveCPLeaderContainer}>
+        <Col className={styles.whatWillIReceiveCPLeaderContainerCol}>
           <H1Red>What will I receive as a CP Leader?</H1Red>
           CP Leaders receive a lot - to bless CP Leaders is the first purpose of
           the Culture Project.
@@ -99,8 +98,8 @@ const LeadersImmersionProgramPage: React.FC = () => {
         </Col>
       </Row>
 
-      <Row>
-        <Col>
+      <Row className={styles.whatWillIContributeCPLeaderContainer}>
+        <Col className={styles.whatWillIContributeCPLeaderContainerCol}>
           <H1Red>What will I contribute as a CP Leader?</H1Red>
           CP Leaders will be asked to give back as well. This is the second
           purpose of the Culture Project: we want to bless people beyond those
@@ -120,7 +119,6 @@ const LeadersImmersionProgramPage: React.FC = () => {
           communications, logistics and many others. CP Leaders receive a lot -
           to bless CP Leaders is the first purpose of the Culture Project.
         </Col>
-        <Col></Col>
       </Row>
 
       <Row flex={false}>

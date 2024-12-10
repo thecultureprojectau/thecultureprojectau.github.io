@@ -26,6 +26,7 @@ export const Row: React.FC<{
   flex?: boolean;
   responsiveLayoutColReverse?: boolean;
   style?: React.CSSProperties;
+  className?: string;
 }> = (props) => {
   const isNonFlex = props.flex === false;
   const isResponsiveFlexDirectionColReverse =
@@ -34,7 +35,7 @@ export const Row: React.FC<{
     <div
       className={`${styles.row} ${isNonFlex && styles.rowNonFlex} ${
         isResponsiveFlexDirectionColReverse && styles.flexDirectionColReverse
-      }`}
+      } ${props.className}`}
       style={props.style}
     >
       {props.children}
@@ -42,6 +43,11 @@ export const Row: React.FC<{
   );
 };
 
-export const Col: React.FC<{ children: React.ReactNode }> = (props) => {
-  return <div className={styles.col}>{props.children}</div>;
+export const Col: React.FC<{
+  children?: React.ReactNode;
+  className?: string;
+}> = (props) => {
+  return (
+    <div className={`${styles.col} ${props.className}`}>{props.children}</div>
+  );
 };
