@@ -3,6 +3,9 @@ import { Row, H1Red, WhiteText } from "./CommonComponents";
 import * as styles from "./wantToHearMoreSection.module.css";
 
 export const WantToHearMoreSection: React.FC = () => {
+  // TODO implement subscribe function
+  return null;
+
   return (
     <div className={styles.wantToHearMoreSection}>
       <Row flex={false}>
