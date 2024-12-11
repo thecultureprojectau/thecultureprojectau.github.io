@@ -149,13 +149,9 @@ const IndexPage: React.FC<PageProps> = () => {
             </GrayText>
           </p>
           <div>
-            Go to{" "}
+            Go to
             <BannerLinkInlineContainer>
-              <BannerLinkButton
-                linkPath="some"
-                label="THE JOURNEY"
-                withBorder
-              />
+              <BannerLinkButton linkPath="/is-cp-for-me" withBorder />
             </BannerLinkInlineContainer>
             to see what why we think this.
           </div>

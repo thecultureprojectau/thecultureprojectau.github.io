@@ -9,6 +9,7 @@ import socialFbLogo from "../../images/CP_WebImages8.png";
 import socialTwitterLogo from "../../images/CP_WebImages9.png";
 import socialInstagramLogo from "../../images/CP_WebImages10.png";
 import socialYoutubeLogo from "../../images/CP_WebImages11.png";
+import { linkConstantsMap, LinkPathType } from "../nav/linksConstants";
 
 export const PageFooter: React.FC = () => {
   return (
@@ -68,21 +69,12 @@ export const PageFooter: React.FC = () => {
           </a>
         </Col>
         <Col>
-          <Link to="/the-journey">
-            <FooterRedText>THE JOURNEY</FooterRedText>
-          </Link>
+          <InlineLink linkPath="/" />
           <br />
-          <Link to="/is-cp-for-me">
-            <FooterRedText>IS CP FOR ME?</FooterRedText>
-          </Link>
+          <InlineLink linkPath="/is-cp-for-me" />
           <br />
-          <Link to="/leaders-immersion-program">
-            <FooterRedText>LEADERS IMMERSION PROGRAM</FooterRedText>
-          </Link>
+          <InlineLink linkPath="/leaders-immersion-program" />
           <br />
-          <Link to="/partners">
-            <FooterRedText>PARTNERS</FooterRedText>
-          </Link>
         </Col>
       </Row>
       <Divider />
@@ -95,6 +87,15 @@ export const PageFooter: React.FC = () => {
         </p>
       </Row>
     </div>
+  );
+};
+
+const InlineLink: React.FC<{ linkPath: LinkPathType }> = (props) => {
+  const { linkPath } = props;
+  return (
+    <Link to={linkPath}>
+      <FooterRedText>{linkConstantsMap[linkPath]}</FooterRedText>
+    </Link>
   );
 };
 

@@ -133,11 +133,11 @@ const IsCPForMePage: React.FC = () => {
           other young adults seeking the same things.
           <br />
           <br />
-          Check out our{" "}
+          {/* Check out our{" "}
           <BannerLinkInlineContainer>
             <BannerLinkButton linkPath="some" label="EVENTS" withBorder />
           </BannerLinkInlineContainer>{" "}
-          page or follow our Instagram/Facebook for details.
+          page or follow our Instagram/Facebook for details. */}
         </Col>
         <Col>
           <center>
@@ -167,11 +167,11 @@ const IsCPForMePage: React.FC = () => {
           friendship and love, all while meeting new people.
           <br />
           <br />
-          Check out our{" "}
+          {/* Check out our{" "}
           <BannerLinkInlineContainer>
             <BannerLinkButton linkPath="some" label="EVENTS" withBorder />
           </BannerLinkInlineContainer>{" "}
-          page or follow our Instagram/Facebook for details.
+          page or follow our Instagram/Facebook for details. */}
         </Col>
       </Row>
 
@@ -183,11 +183,11 @@ const IsCPForMePage: React.FC = () => {
           other young people who want the same things.
           <br />
           <br />
-          Check out our{" "}
+          {/* Check out our{" "}
           <BannerLinkInlineContainer>
             <BannerLinkButton linkPath="some" label="EVENTS" withBorder />
           </BannerLinkInlineContainer>{" "}
-          page or follow our Instagram/Facebook for details.
+          page or follow our Instagram/Facebook for details. */}
         </Col>
         <Col>
           <center>
@@ -215,8 +215,7 @@ const IsCPForMePage: React.FC = () => {
             Go to{" "}
             <BannerLinkInlineContainer>
               <BannerLinkButton
-                linkPath="some"
-                label="LEADERS IMMERSION PROGRAM"
+                linkPath="/leaders-immersion-program"
                 withBorder
               />
             </BannerLinkInlineContainer>

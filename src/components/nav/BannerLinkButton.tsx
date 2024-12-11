@@ -1,16 +1,17 @@
 import { Link } from "gatsby-link";
 import React from "react";
 import * as styles from "./BannerLinkButton.module.css";
+import { linkConstantsMap, LinkPathType } from "./linksConstants";
 
 interface Props {
-  linkPath: string;
-  label: string;
+  linkPath: LinkPathType;
   withBorder?: boolean;
   invertColor?: boolean;
 }
 
 export const BannerLinkButton: React.FC<Props> = (props) => {
-  const { linkPath, label, withBorder = false, invertColor = false } = props;
+  const { linkPath, withBorder = false, invertColor = false } = props;
+  const label = linkConstantsMap[linkPath];
 
   return (
     <Link to={linkPath}>
