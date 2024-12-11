@@ -65,7 +65,7 @@ const IndexPage: React.FC<PageProps> = () => {
         </Col>
       </Row>
 
-      <Row flex={false}>
+      {/* <Row flex={false}>
         <div>
           <H1Orange>Quiz Time!</H1Orange>
           <GrayText>Take the quiz to see what others think</GrayText>
@@ -86,7 +86,7 @@ const IndexPage: React.FC<PageProps> = () => {
             things are getting harder to figure out.{" "}
           </GrayText>
         </div>
-      </Row>
+      </Row> */}
 
       <Row flex={false}>
         <div>

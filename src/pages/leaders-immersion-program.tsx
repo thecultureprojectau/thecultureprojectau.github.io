@@ -13,7 +13,9 @@ import { NavLinks } from "../components/nav";
 import * as styles from "./leaders-immersion-program.module.css";
 
 import cpLogo from "../images/CP_Logo_modified.png";
+import howDoesTheLPYearFitInImg from "../images/leaders-immersion-program/Gibson Images10.png";
 import howDoesTheLPYearUnfoldImg from "../images/leaders-immersion-program/Gibson Images7.png";
+import missionMentorImg from "../images/leaders-immersion-program/Gibson Images6.png";
 import receivingAndGivingImg from "../images/leaders-immersion-program/Gibson Images5.png";
 import typewriterImg from "../images/leaders-immersion-program/Gibson Images4.png";
 import appleWatchImg from "../images/leaders-immersion-program/Gibson Images3.png";
@@ -58,7 +60,7 @@ const LeadersImmersionProgramPage: React.FC = () => {
         </Col>
       </Row>
 
-      <Row>
+      <Row responsiveLayoutColReverse>
         <Col>
           <H1Red>How does the Leaders Immersion Program fit in?</H1Red>
           The Leaders Immersion Program (the LP for short) is at the heart of
@@ -69,7 +71,11 @@ const LeadersImmersionProgramPage: React.FC = () => {
           a better culture today. Those doing the LP are called Culture Project
           Leaders (CP Leaders).
         </Col>
-        <Col>Image here</Col>
+        <Col>
+          <center>
+            <img src={howDoesTheLPYearFitInImg} width={300} />
+          </center>
+        </Col>
       </Row>
 
       <Row className={styles.whatWillIReceiveCPLeaderContainer}>
@@ -189,6 +195,9 @@ const LeadersImmersionProgramPage: React.FC = () => {
             <div className={styles.lpYearEventsGridNumberLabel}>8</div>
             <H1Orange>Mission Mentor</H1Orange>A monthly meeting with a mission
             mentor, through the Catholic Psych Institute.
+            <center>
+              <img src={missionMentorImg} width={300} />
+            </center>
           </div>
         </div>
       </Row>
@@ -201,7 +210,8 @@ const LeadersImmersionProgramPage: React.FC = () => {
 
       <Row>
         <Col>
-          Is the Leaders Immersion Program a job?
+          <H1Red>Is the Leaders Immersion Program a job?</H1Red>
+
           <center>
             <img src={typewriterImg} width={500} />
           </center>
